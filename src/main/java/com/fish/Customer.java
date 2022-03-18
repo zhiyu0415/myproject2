@@ -3,13 +3,9 @@ package com.fish;
 public class Customer {
     String customer;
     int spent;
-    int total;
     float off =0.1f;
-    public Customer(String customer){
-        this.customer = customer;
-    }
     public Customer(String customer,int spent){
-        this(customer);
+        this.customer = customer;
         this.spent = spent;
     }
     public float backMoney(){
