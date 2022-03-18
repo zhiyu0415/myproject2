@@ -12,8 +12,10 @@ public class Customer {
         this(customer);
         this.spent = spent;
     }
+    public float backMoney(){
+        return (spent/1000)*off*1000;
+    }
     public void print(){
-        float offMoney = (spent/1000)*off*1000;
-        System.out.println(customer+"\t"+spent+"\t"+(spent-offMoney)+"\t");
+        System.out.println(customer+"\t"+spent+"\t"+(spent-backMoney())+"\t");
     }
 }

@@ -8,7 +8,6 @@ public class SilverCustomer extends Customer {
     }
 
     public void print(){
-        float offMoney = (spent/1000)*off*1000;
-        System.out.println(customer+"\t"+spent+"\t"+(spent-offMoney)+"\t"+"("+offMoney+")"+"\t");
+        System.out.println(customer+"\t"+spent+"\t"+(spent-backMoney())+"\t"+"("+backMoney()+")"+"\t");
     }
 }
