@@ -16,7 +16,6 @@ public class GraduateStudent extends Student{//副類別，子類別
         this.thesis = thesis;
 
     }
-
     @Override//防呆，編譯上的錯誤
     public void print() {
         System.out.println(name+"\t"+english+"\t"+math+"\t"+getaverage()+"\t"+thesis);
