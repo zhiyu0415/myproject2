@@ -1,4 +1,4 @@
-package com.fish;
+package com.fish.score;
 
 public class GraduateStudent extends Student{//副類別，子類別
     /*public GraduateStudent(){

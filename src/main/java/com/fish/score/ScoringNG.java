@@ -1,4 +1,4 @@
-package com.fish;
+package com.fish.score;
 
 public class ScoringNG {
     public static void main(String[] args) {

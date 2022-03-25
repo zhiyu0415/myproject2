@@ -1,4 +1,4 @@
-package com.fish;
+package com.fish.sales;
 
 public class Customer {
     String customer;

@@ -1,4 +1,4 @@
-package com.fish;
+package com.fish.sales;
 
 public class Tester {
     public static void main(String[] args) {

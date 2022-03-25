@@ -1,4 +1,4 @@
-package com.fish;
+package com.fish.sales;
 
 public class GoldenCustomer extends SilverCustomer{//SilverCustomer的比Customs重複性更高
     public GoldenCustomer(String customer, int spent) {

@@ -1,6 +1,4 @@
-package com.fish;
-
-import javax.xml.namespace.QName;
+package com.fish.score;
 
 public class Scoring {
     public static void main(String[] args) {
