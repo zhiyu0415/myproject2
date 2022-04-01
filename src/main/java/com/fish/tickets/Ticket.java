@@ -4,12 +4,34 @@ public class Ticket {
     /*public static final int TAIPEI_STATION = 100;//加上public就到處都可以用
     public static final int TAICHUNG_STATION = 200;
     public static final int KAOHSIUNG_STATION = 300;*/
-    int start;
-    int destanastion;
+    Station start;
+    Station destinastion;
     int price;
-    public Ticket(int start, int destanastion){
+    public Ticket(Station start, Station destanastion){
         this.start = start;
-        this.destanastion = destanastion;
+        this.destinastion = destanastion;
+        if (start == Station.TAIPEI_STATION){
+            if(destinastion == Station.TAICHUNG_STATION){
+                price = 600;
+            }else {
+                price = 1500;
+            }
+        }else if(start == Station.TAICHUNG_STATION){
+            if (destinastion == Station.TAIPEI_STATION){
+                price = 600;
+            }else{
+                price = 900;
+            }
+        }else {
+            if(destinastion == Station.TAIPEI_STATION){
+                price = 1500;
+            }else {
+                price = 900;
+            }
+        }
+    }
+    public void print(){
+        System.out.println(start+"\t"+destinastion+"\t"+price);
     }
 
 }
