@@ -33,7 +33,7 @@ public class Train {
                 destination= Station.KAOHSIUNG_STATION;
                 break;
         }
-        System.out.println("Which kind of ticket: (1)normal (2)Student (3)Elder");
+        System.out.println("Which kind of ticket: (1)Normal (2)Student (3)Elder");
         Ticket ticket = null;
         choice = Integer.parseInt(scanner.next());
         switch(choice){
