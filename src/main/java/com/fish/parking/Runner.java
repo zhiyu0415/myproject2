@@ -7,7 +7,7 @@ public class Runner {
     public static void main(String[] args) {
         String id = "ABC-1234";
         String enterTime = "8:00";
-        String exitTime = "11:30";
+        String exitTime = "11:05";
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");//需要查格式可直接google
         //Exception 例外 VS Error 錯誤
         Date d = null;
@@ -22,7 +22,7 @@ public class Runner {
         //long ms = 3*60*60*1000;//加三小時(毫秒)
         try {
             Date d2 = new Date();
-            d2 = sdf. parse(exitTime);
+            d2 = sdf. parse(exitTime);//解析
             System.out.println(d2);
             System.out.println(d2.getTime());
             int mins = (int)(d2.getTime()-d.getTime())/1000/60;//將long轉型成int
