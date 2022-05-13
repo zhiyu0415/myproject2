@@ -1,6 +1,6 @@
 package com.fish.score;
 
-public class GraduateStudent extends Student{//副類別，子類別
+public class GraduateStudent extends Student implements Printable{//副類別，子類別
     /*public GraduateStudent(){
         // super();//自帶(送的)
 

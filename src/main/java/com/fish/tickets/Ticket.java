@@ -10,25 +10,35 @@ public class Ticket {
     public Ticket(Station start, Station destanastion){
         this.start = start;
         this.destinastion = destanastion;
-        if (start == Station.TAIPEI_STATION){
-            if(destinastion == Station.TAICHUNG_STATION){
+        int diff = Math.abs(start.id - destanastion.id);
+        System.out.println("diff:"+diff);
+        switch (diff) {
+            case 100:
+                price = 500;
+            case 200:
                 price = 600;
+            case 300:
+                price = 1100;
+        }
+        /*if (start == Station.TAIPEI_STATION){
+            if(destinastion == Station.TAICHUNG_STATION){
+                price = 500;
             }else {
-                price = 1500;
+                price = 1100;
             }
         }else if(start == Station.TAICHUNG_STATION){
             if (destinastion == Station.TAIPEI_STATION){
-                price = 600;
+                price = 500;
             }else{
-                price = 900;
+                price = 600;
             }
         }else {
             if(destinastion == Station.TAIPEI_STATION){
-                price = 1500;
+                price = 1100;
             }else {
-                price = 900;
+                price = 600;
             }
-        }
+        }*/
     }
     public void print(){
         System.out.println(start+"\t"+destinastion+"\t"+price);

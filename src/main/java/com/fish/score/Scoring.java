@@ -12,7 +12,7 @@ public class Scoring {
         students.add(new Student("Hank",60,77));
         students.add(new Student("Tina",59,20));
         students.add(new GraduateStudent("Jane",88,76,70));
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < students.size(); i++) {
             students.get(i).print();
         }
         /*Student tony=new Student("Tony");
