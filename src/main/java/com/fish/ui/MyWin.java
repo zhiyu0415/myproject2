@@ -16,13 +16,15 @@ public class MyWin {
         //frame.setLayout(new BorderLayout());//常用
         frame.setLayout(new FlowLayout());//流水性，向右排序
         frame.add(button);//沒有特別說明會直接放在C位，並占滿畫面
+        MyActionListener listener = new MyActionListener();//監聽器
+        button.addActionListener(listener);//按按鈕想要有反應->建立class　MyActionListener
+        frame.add(new JButton("testing"));
+        /*frame.add(new JButton("testing"));
         frame.add(new JButton("testing"));
         frame.add(new JButton("testing"));
         frame.add(new JButton("testing"));
         frame.add(new JButton("testing"));
-        frame.add(new JButton("testing"));
-        frame.add(new JButton("testing"));
-        frame.add(new JButton("testing"));
+        frame.add(new JButton("testing"));*/
 
         frame.setVisible(true);
         System.out.println("END?");
