@@ -1,2 +1,2 @@
-Jack 88 60
-Hank 98 96
+Jack,88,60
+Hank,98,96
